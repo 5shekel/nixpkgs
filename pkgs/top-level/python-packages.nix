@@ -146,6 +146,8 @@ in {
 
   aafigure = callPackage ../development/python-modules/aafigure { };
 
+  abodepy = callPackage ../development/python-modules/abodepy { };
+
   absl-py = callPackage ../development/python-modules/absl-py { };
 
   accupy = callPackage ../development/python-modules/accupy { };
@@ -163,6 +165,8 @@ in {
   adal = callPackage ../development/python-modules/adal { };
 
   adb-homeassistant = callPackage ../development/python-modules/adb-homeassistant { };
+
+  adb-shell = callPackage ../development/python-modules/adb-shell { };
 
   addic7ed-cli = callPackage ../development/python-modules/addic7ed-cli { };
 
@@ -279,6 +283,8 @@ in {
   amqp = callPackage ../development/python-modules/amqp { };
 
   amqplib = callPackage ../development/python-modules/amqplib { };
+
+  androidtv = callPackage ../development/python-modules/androidtv { };
 
   androguard = callPackage ../development/python-modules/androguard { };
 
@@ -762,7 +768,7 @@ in {
 
   bandit = callPackage ../development/python-modules/bandit { };
 
-  bap = callPackage ../development/python-modules/bap { bap = pkgs.ocaml-ng.ocamlPackages_4_06.bap; };
+  bap = callPackage ../development/python-modules/bap { bap = pkgs.ocaml-ng.ocamlPackages_4_07.bap; };
 
   base58 = callPackage ../development/python-modules/base58 { };
 
@@ -3494,6 +3500,8 @@ in {
 
   logzero = callPackage ../development/python-modules/logzero { };
 
+  lomond = callPackage ../development/python-modules/lomond { };
+
   loo-py = callPackage ../development/python-modules/loo-py { };
 
   lpod = callPackage ../development/python-modules/lpod { };
@@ -4042,6 +4050,8 @@ in {
 
   nose-focus = callPackage ../development/python-modules/nose-focus { };
 
+  nose-timer = callPackage ../development/python-modules/nose-timer { };
+
   nosejs = callPackage ../development/python-modules/nosejs { };
 
   nose-of-yeti = callPackage ../development/python-modules/nose-of-yeti { };
@@ -4066,6 +4076,8 @@ in {
   notify2 = callPackage ../development/python-modules/notify2 { };
 
   notify = callPackage ../development/python-modules/notify { };
+
+  notify-py = callPackage ../development/python-modules/notify-py { };
 
   notmuch = callPackage ../development/python-modules/notmuch { inherit (pkgs) notmuch; };
 
@@ -4488,6 +4500,8 @@ in {
 
   pkuseg = callPackage ../development/python-modules/pkuseg { };
 
+  python-csxcad = callPackage ../development/python-modules/python-csxcad { };
+
   pkutils = callPackage ../development/python-modules/pkutils { };
 
   plac = callPackage ../development/python-modules/plac { };
@@ -4692,6 +4706,8 @@ in {
 
   purepng = callPackage ../development/python-modules/purepng { };
 
+  pure-python-adb = callPackage ../development/python-modules/pure-python-adb { };
+
   pure-python-adb-homeassistant = callPackage ../development/python-modules/pure-python-adb-homeassistant { };
 
   purl = callPackage ../development/python-modules/purl { };
@@ -4721,6 +4737,8 @@ in {
   py4j = callPackage ../development/python-modules/py4j { };
 
   pyacoustid = callPackage ../development/python-modules/pyacoustid { };
+
+  pyads = callPackage ../development/python-modules/pyads { };
 
   pyaes = callPackage ../development/python-modules/pyaes { };
 
@@ -4878,8 +4896,6 @@ in {
   pydocumentdb = callPackage ../development/python-modules/pydocumentdb { };
 
   pydot = callPackage ../development/python-modules/pydot { inherit (pkgs) graphviz; };
-
-  pydot_ng = callPackage ../development/python-modules/pydot_ng { graphviz = pkgs.graphviz; };
 
   pydotplus = callPackage ../development/python-modules/pydotplus { };
 
@@ -5412,6 +5428,8 @@ in {
 
   pysolr = callPackage ../development/python-modules/pysolr { };
 
+  py-sonic = callPackage ../development/python-modules/py-sonic { };
+
   pysonos = callPackage ../development/python-modules/pysonos { };
 
   pysoundfile = self.soundfile; # Alias added 23-06-2019
@@ -5753,6 +5771,8 @@ in {
   python-mpv-jsonipc = callPackage ../development/python-modules/python-mpv-jsonipc { };
 
   python-multipart = callPackage ../development/python-modules/python-multipart { };
+
+  python-nest = callPackage ../development/python-modules/python-nest { };
 
   pythonnet = callPackage
     ../development/python-modules/pythonnet { # `mono >= 4.6` required to prevent crashes encountered with earlier versions.
@@ -6524,6 +6544,8 @@ in {
     jre = pkgs.jre8; # TODO: remove override https://github.com/NixOS/nixpkgs/pull/89731
   };
 
+  skidl = callPackage ../development/python-modules/skidl { };
+
   sklearn-deap = callPackage ../development/python-modules/sklearn-deap { };
 
   skorch = callPackage ../development/python-modules/skorch { };
@@ -6696,6 +6718,8 @@ in {
   else
     callPackage ../development/python-modules/sphinx/2.nix { };
 
+  sphinx-argparse = callPackage ../development/python-modules/sphinx-argparse { };
+
   sphinx-jinja = callPackage ../development/python-modules/sphinx-jinja { };
 
   sphinx-navtree = callPackage ../development/python-modules/sphinx-navtree { };
@@ -6759,6 +6783,8 @@ in {
   ssdp = callPackage ../development/python-modules/ssdp { };
 
   sseclient = callPackage ../development/python-modules/sseclient { };
+
+  sseclient-py = callPackage ../development/python-modules/sseclient-py { };
 
   sshpubkeys = callPackage ../development/python-modules/sshpubkeys { };
 

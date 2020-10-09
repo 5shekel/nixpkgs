@@ -4,13 +4,13 @@
 {
   version = "0.115.6";
   components = {
-    "abode" = ps: with ps; [ ]; # missing inputs: abodepy
+    "abode" = ps: with ps; [ abodepy ];
     "accuweather" = ps: with ps; [ ]; # missing inputs: accuweather
     "acer_projector" = ps: with ps; [ pyserial ];
     "acmeda" = ps: with ps; [ ]; # missing inputs: aiopulse
     "actiontec" = ps: with ps; [ ];
     "adguard" = ps: with ps; [ adguardhome ];
-    "ads" = ps: with ps; [ ]; # missing inputs: pyads
+    "ads" = ps: with ps; [ pyads ];
     "aftership" = ps: with ps; [ ]; # missing inputs: pyaftership
     "agent_dvr" = ps: with ps; [ ]; # missing inputs: agent-py
     "air_quality" = ps: with ps; [ ];
@@ -29,7 +29,7 @@
     "amcrest" = ps: with ps; [ ha-ffmpeg ]; # missing inputs: amcrest
     "ampio" = ps: with ps; [ ]; # missing inputs: asmog
     "android_ip_webcam" = ps: with ps; [ ]; # missing inputs: pydroid-ipcam
-    "androidtv" = ps: with ps; [ ]; # missing inputs: adb-shell[async] androidtv[async] pure-python-adb[async]
+    "androidtv" = ps: with ps; [ adb-shell androidtv pure-python-adb ];
     "anel_pwrctrl" = ps: with ps; [ ]; # missing inputs: anel_pwrctrl-homeassistant
     "anthemav" = ps: with ps; [ ]; # missing inputs: anthemav
     "apache_kafka" = ps: with ps; [ aiokafka ];
@@ -526,7 +526,7 @@
     "nederlandse_spoorwegen" = ps: with ps; [ ]; # missing inputs: nsapi
     "nello" = ps: with ps; [ ]; # missing inputs: pynello
     "ness_alarm" = ps: with ps; [ ]; # missing inputs: nessclient
-    "nest" = ps: with ps; [ ]; # missing inputs: python-nest
+    "nest" = ps: with ps; [ python-nest ];
     "netatmo" = ps: with ps; [ aiohttp-cors hass-nabucasa pyatmo ];
     "netdata" = ps: with ps; [ ]; # missing inputs: netdata
     "netgear" = ps: with ps; [ ]; # missing inputs: pynetgear
