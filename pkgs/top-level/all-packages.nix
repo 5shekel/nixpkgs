@@ -979,6 +979,8 @@ in
 
   cue = callPackage ../development/tools/cue { };
 
+  cyclone-scheme = callPackage ../development/interpreters/cyclone { };
+
   deltachat-electron = callPackage
     ../applications/networking/instant-messengers/deltachat-electron { };
 
@@ -3742,6 +3744,8 @@ in
   flac123 = callPackage ../applications/audio/flac123 { };
 
   flamegraph = callPackage ../development/tools/flamegraph { };
+
+  flips = callPackage ../tools/compression/flips { };
 
   flvtool2 = callPackage ../tools/video/flvtool2 { };
 
@@ -10387,7 +10391,6 @@ in
   spidermonkey_60 = callPackage ../development/interpreters/spidermonkey/60.nix { };
   spidermonkey_68 = callPackage ../development/interpreters/spidermonkey/68.nix { };
   spidermonkey_78 = callPackage ../development/interpreters/spidermonkey/78.nix { };
-  spidermonkey = spidermonkey_68;
 
   ssm-agent = callPackage ../applications/networking/cluster/ssm-agent { };
   ssm-session-manager-plugin = callPackage ../applications/networking/cluster/ssm-session-manager-plugin { };
@@ -16385,7 +16388,7 @@ in
 
   inherit (callPackages ../servers/asterisk { })
     asterisk asterisk-stable asterisk-lts
-    asterisk_13 asterisk_15 asterisk_16;
+    asterisk_13 asterisk_16 asterisk_17;
 
   asterisk-module-sccp = callPackage ../servers/asterisk/sccp { };
 

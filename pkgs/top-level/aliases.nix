@@ -46,6 +46,7 @@ mapAliases ({
   arduino_core = arduino-core;  # added 2015-02-04
   arora = throw "arora has been removed."; # added 2020-09-09
   asciidocFull = asciidoc-full;  # added 2014-06-22
+  asterisk_15 = throw "Asterisk 15 is end of life and has been removed."; # added 2020-10-07
   at_spi2_atk = at-spi2-atk; # added 2018-02-25
   at_spi2_core = at-spi2-core; # added 2018-02-25
   avldrums-lv2 = x42-avldrums; # added 2020-03-29
@@ -661,6 +662,8 @@ mapAliases ({
   youtubeDL = youtube-dl;  # added 2014-10-26
   zdfmediathk = mediathekview; # added 2019-01-19
   gnome_user_docs = gnome-user-docs; # added 2019-11-20
+  # spidermonkey is not ABI upwards-ompatible, so only allow this for nix-shell
+  spidermonkey = spidermonkey_78; # added 2020-10-09
 
   # TODO(ekleog): add ‘wasm’ alias to ‘ocamlPackages.wasm’ after 19.03
   # branch-off
